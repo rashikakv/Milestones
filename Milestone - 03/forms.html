@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+    <meta charset="UTF-8">
+    <head>
+        <title>PERSONAL DETAILS</title>
+    </head>
+    <style>
+        body{
+            display: flex;
+            justify-content:center;
+            align-items: center;
+            margin-left: 50px;
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-image: url("https://images.pexels.com/photos/4270292/pexels-photo-4270292.jpeg");
+            background-color: rgb(245, 226, 182);
+        }
+        form{
+            width: 400px;
+            background-color: #b9f88d;
+            padding: 25px 50px 75px 50px;
+            border-radius: 50px;
+            box-shadow: 0 0 25px  rgb(29, 164, 226);
+         }
+         label {
+                display: block;
+                margin-bottom: 10px;
+            }
+        
+            input[type="radio"],
+            input[type="checkbox"]{
+                margin-bottom: 10px;
+                margin-left: 20px;
+            }
+            input[type="text"],
+            input[type="email"],
+            input[type="password"],
+            input[type="number"],
+            input[type="date"],
+            input[type="zip"],
+            input[type="street"],
+            input[type="city"],
+            input[type="file"],
+            textarea{
+                width: 5cm;
+                margin-left: 20px;
+                margin-bottom: 10px;
+                padding: 2px;
+            }
+            input[type="submit"] {
+                padding: 10px 20px;
+                margin-top: 10px;
+                border-radius: 5px;
+                cursor:pointer;
+            }
+            ul{
+                list-style-type:square;
+            }
+            ol{
+                list-style-type:decimal;
+            }
+    </style>
+     <body>
+        <form action="" method="get" class="form">
+            <fieldset>
+                
+            <h2 style="font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; color: rgb(95, 12, 158); text-align: center;">HIRING for INTERN!!!</h2>
+            <div class="form">
+                <label>Enter your Name : </label>
+                    <input type="text" name="name" id="name" required/>
+                <label>Enter your Email : </label>
+                    <input type="email" name="email" id="email" required/>
+                <label>Enter your Password : </label>
+                    <input type="password" name="password" id="password" required/>
+                <label>Confirm your Password : </label>
+                    <input type="password" name="confPass" required/>
+                <label>Age : </label>
+                    <input type="number" name="age" required/>
+                <label>Enter your Gender : </label>
+                    <input type="radio" name="gender" value="male"/>Male
+                    <input type="radio" name="gender" value="female"/>Female
+                    <input type="radio" name="gender" value="others"/>Others
+                <label>Date of Birth (DOB) : </label>
+                    <input type="date" name="dob" required/><br>
+                   <!-- <fieldset>
+                        <legend>Address</legend>-->
+                <label>Address : </label>
+                <textarea name="adr" rows="5" cols="50" required></textarea>
+                        <label for="street">Street:</label>
+                        <input type="text" id="street" name="street" required/>
+                        <label for="city">City:</label>
+                        <input type="text" id="city" name="city" required/>
+                        <label for="zip">Zip Code:</label>
+                        <input type="text" id="zip" name="zip" required/>
+                <br>
+                <label>Enter your College Name : </label>
+                <input type="text" name="clg" required/>
+                <label>Branch of Study : </label>
+                <input type="text" name="brnch" required/>
+                <!--Radio ( select only one )-->
+                <label>Year of Passing : </label>
+                <input type="radio" name="yr"/>2022
+                <input type="radio" name="yr"/>2023
+                <input type="radio" name="yr"/>2024
+                <input type="radio" name="yr"/>2025
+                <br>
+                <br>
+                <fieldset>
+                    <legend><b><i>Available Domains....</i></b></legend>
+                
+                <!--LISTS : TYPES - Ordered(<ol></ol>)), Unordered(<ul></ul>),
+                 Description((<dl>DESCRIPTION LIST</dl>),(<dd>DEFINITION DESCRIPTION</dd>),(<dt>DEFINITION TERM</dt))-->
+                <ol>
+                    <li>Artificial Intelligence(AI) : 
+                        <ul>
+                            <li>Machine Learning</li>
+                            <li>Deep Learning</li>
+                            <li>Natural Language Processing(NLP)</li>
+                        </ul>
+                    </li>
+                    <li>Data Science and Big Data : 
+                        <ul>
+                            <li>Data Analytics</li>
+                            <li>Data Mining</li>
+                            <li>Data Warehousing</li>
+                            <li>Data Visualisation</li>
+                        </ul>
+                    </li>
+                    <li>Cybersecurity :
+                        <ul>
+                            <li>Network Security</li>
+                            <li>Cryptography</li>
+                            <li>Ethical Hacking</li>
+                            <li>Secutity Protocols</li>
+                        </ul>
+                    </li>
+                </ol>
+                </fieldset>
+                <!--<dl>->List
+                    <dt>HTML</dt>->heading
+                    <dd>HyperText Markup Language</dd>->Description
+                    <dt>CSS</dt>
+                    <dd>Cascading Style Sheets</dd>
+                  </dl>-->
+                  <br>
+                  <section>
+                  <table border="2" style="color: rgb(6, 5, 57); text-align: center;">
+                      <tr style="color: rgb(129, 9, 61);">
+                            <th>Domain</th>
+                            <th>Fees</th>
+                            <th>Duration</th>
+                            <th>Mode</th>
+                       </tr>
+                       <tr>
+                            <td>Artificial Intelligence</td>
+                            <td>Rs.450/-</td>
+                            <td>One Month</td>
+                            <td rowspan="3">Online/Offline</td>
+                        </tr>
+                        <tr>
+                            <td>Data Science and Big Data</td>
+                            <td>Rs.450/-</td>
+                            <td>One Month</td>
+                        </tr>
+                        <tr>
+                            <td>Cybersecurity</td>
+                            <td>Rs.450/-</td>
+                            <td>One Month</td>
+                        </tr>
+
+                </table>
+                    </section>
+                 <br>
+                  <!--Check boxes (can select 1 or more)-->
+                <label>Domain Interested : </label>
+                <input type="checkbox" name="intr"/>Artificial Intelligence<br>
+                <input type="checkbox" name="intr"/>Data Science and Big Data<br>
+                <input type="checkbox" name="intr"/>Cybersecurity
+                <br><label>Willing to Relocate ? </label>
+                <input type="radio" />YES
+                <input type="radio" />NO
+                <label>Upload your Resume : </label>
+                <input type="file" name="upload" required/>
+                <div class="form">
+                    <input style="font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; color: rgb(13, 21, 177);" type="submit"  value="SUBMIT" />
+                </div>
+                <table>
+                   
+                
+            </div>
+            </fieldset>
+        </form>
+    </body>
+</html>
